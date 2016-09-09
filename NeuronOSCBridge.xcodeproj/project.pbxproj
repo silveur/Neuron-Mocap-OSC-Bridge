@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5431CC211D8021EB004D3582 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5431CC201D8021EB004D3582 /* main.cpp */; };
+		54D331BF1D82D1E1007A696F /* NeuronDataReader.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D331BE1D82D1E1007A696F /* NeuronDataReader.dylib */; };
+		54D331FA1D82D3BB007A696F /* IpEndpointName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D331C81D82D2C6007A696F /* IpEndpointName.cpp */; };
+		54D331FB1D82D3DA007A696F /* NetworkingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D331CD1D82D2C6007A696F /* NetworkingUtils.cpp */; };
+		54D331FD1D82D3E4007A696F /* UdpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D331CE1D82D2C6007A696F /* UdpSocket.cpp */; };
+		54D331FE1D82D3F1007A696F /* OscOutboundPacketStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D331DB1D82D2C6007A696F /* OscOutboundPacketStream.cpp */; };
+		54D331FF1D82D3F5007A696F /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D331E01D82D2C6007A696F /* OscReceivedElements.cpp */; };
+		54D332001D82D3FA007A696F /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D331E21D82D2C6007A696F /* OscTypes.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5431CC1B1D8021EA004D3582 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5431CC1D1D8021EB004D3582 /* NeuronOSCBridge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NeuronOSCBridge; sourceTree = BUILT_PRODUCTS_DIR; };
+		5431CC201D8021EB004D3582 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5431CC2A1D8029E0004D3582 /* DataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataType.h; sourceTree = "<group>"; };
+		5431CC2B1D8029E0004D3582 /* NeuronDataReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NeuronDataReader.h; sourceTree = "<group>"; };
+		5431CC311D80310F004D3582 /* socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = socket.hpp; sourceTree = "<group>"; };
+		5431CC331D803135004D3582 /* includes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = includes.h; sourceTree = "<group>"; };
+		5431CC361D803492004D3582 /* data.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = data.hpp; sourceTree = "<group>"; };
+		54D331BE1D82D1E1007A696F /* NeuronDataReader.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = NeuronDataReader.dylib; path = NeuronOSCBridge/include/NeuronDataReader.dylib; sourceTree = SOURCE_ROOT; };
+		54D331C81D82D2C6007A696F /* IpEndpointName.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IpEndpointName.cpp; sourceTree = "<group>"; };
+		54D331C91D82D2C6007A696F /* IpEndpointName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
+		54D331CA1D82D2C6007A696F /* NetworkingUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkingUtils.h; sourceTree = "<group>"; };
+		54D331CB1D82D2C6007A696F /* PacketListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketListener.h; sourceTree = "<group>"; };
+		54D331CD1D82D2C6007A696F /* NetworkingUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkingUtils.cpp; sourceTree = "<group>"; };
+		54D331CE1D82D2C6007A696F /* UdpSocket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UdpSocket.cpp; sourceTree = "<group>"; };
+		54D331CF1D82D2C6007A696F /* TimerListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerListener.h; sourceTree = "<group>"; };
+		54D331D01D82D2C6007A696F /* UdpSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UdpSocket.h; sourceTree = "<group>"; };
+		54D331D21D82D2C6007A696F /* NetworkingUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkingUtils.cpp; sourceTree = "<group>"; };
+		54D331D31D82D2C6007A696F /* UdpSocket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UdpSocket.cpp; sourceTree = "<group>"; };
+		54D331D81D82D2C6007A696F /* MessageMappingOscPacketListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageMappingOscPacketListener.h; sourceTree = "<group>"; };
+		54D331D91D82D2C6007A696F /* OscException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscException.h; sourceTree = "<group>"; };
+		54D331DA1D82D2C6007A696F /* OscHostEndianness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscHostEndianness.h; sourceTree = "<group>"; };
+		54D331DB1D82D2C6007A696F /* OscOutboundPacketStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OscOutboundPacketStream.cpp; sourceTree = "<group>"; };
+		54D331DC1D82D2C6007A696F /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscOutboundPacketStream.h; sourceTree = "<group>"; };
+		54D331DD1D82D2C6007A696F /* OscPacketListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscPacketListener.h; sourceTree = "<group>"; };
+		54D331DE1D82D2C6007A696F /* OscPrintReceivedElements.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OscPrintReceivedElements.cpp; sourceTree = "<group>"; };
+		54D331DF1D82D2C6007A696F /* OscPrintReceivedElements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscPrintReceivedElements.h; sourceTree = "<group>"; };
+		54D331E01D82D2C6007A696F /* OscReceivedElements.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OscReceivedElements.cpp; sourceTree = "<group>"; };
+		54D331E11D82D2C6007A696F /* OscReceivedElements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscReceivedElements.h; sourceTree = "<group>"; };
+		54D331E21D82D2C6007A696F /* OscTypes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OscTypes.cpp; sourceTree = "<group>"; };
+		54D331E31D82D2C6007A696F /* OscTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscTypes.h; sourceTree = "<group>"; };
+		54D332011D82D472007A696F /* osc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = osc.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5431CC1A1D8021EA004D3582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D331BF1D82D1E1007A696F /* NeuronDataReader.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5431CC141D8021EA004D3582 = {
+			isa = PBXGroup;
+			children = (
+				5431CC1F1D8021EB004D3582 /* NeuronOSCBridge */,
+				5431CC1E1D8021EB004D3582 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5431CC1E1D8021EB004D3582 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5431CC1D1D8021EB004D3582 /* NeuronOSCBridge */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5431CC1F1D8021EB004D3582 /* NeuronOSCBridge */ = {
+			isa = PBXGroup;
+			children = (
+				54D331C01D82D2C6007A696F /* oscpack_1_1_0 */,
+				5431CC201D8021EB004D3582 /* main.cpp */,
+				5431CC311D80310F004D3582 /* socket.hpp */,
+				5431CC361D803492004D3582 /* data.hpp */,
+				54D332011D82D472007A696F /* osc.h */,
+				5431CC331D803135004D3582 /* includes.h */,
+				5431CC291D8029E0004D3582 /* include */,
+			);
+			path = NeuronOSCBridge;
+			sourceTree = "<group>";
+		};
+		5431CC291D8029E0004D3582 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				54D331BE1D82D1E1007A696F /* NeuronDataReader.dylib */,
+				5431CC2A1D8029E0004D3582 /* DataType.h */,
+				5431CC2B1D8029E0004D3582 /* NeuronDataReader.h */,
+			);
+			name = include;
+			path = "../../../Desktop/NeuronDataReader SDK b15/Mac/include";
+			sourceTree = "<group>";
+		};
+		54D331C01D82D2C6007A696F /* oscpack_1_1_0 */ = {
+			isa = PBXGroup;
+			children = (
+				54D331C71D82D2C6007A696F /* ip */,
+				54D331D71D82D2C6007A696F /* osc */,
+			);
+			name = oscpack_1_1_0;
+			path = ../oscpack_1_1_0;
+			sourceTree = "<group>";
+		};
+		54D331C71D82D2C6007A696F /* ip */ = {
+			isa = PBXGroup;
+			children = (
+				54D331C81D82D2C6007A696F /* IpEndpointName.cpp */,
+				54D331C91D82D2C6007A696F /* IpEndpointName.h */,
+				54D331CA1D82D2C6007A696F /* NetworkingUtils.h */,
+				54D331CB1D82D2C6007A696F /* PacketListener.h */,
+				54D331CC1D82D2C6007A696F /* posix */,
+				54D331CF1D82D2C6007A696F /* TimerListener.h */,
+				54D331D01D82D2C6007A696F /* UdpSocket.h */,
+				54D331D11D82D2C6007A696F /* win32 */,
+			);
+			path = ip;
+			sourceTree = "<group>";
+		};
+		54D331CC1D82D2C6007A696F /* posix */ = {
+			isa = PBXGroup;
+			children = (
+				54D331CD1D82D2C6007A696F /* NetworkingUtils.cpp */,
+				54D331CE1D82D2C6007A696F /* UdpSocket.cpp */,
+			);
+			path = posix;
+			sourceTree = "<group>";
+		};
+		54D331D11D82D2C6007A696F /* win32 */ = {
+			isa = PBXGroup;
+			children = (
+				54D331D21D82D2C6007A696F /* NetworkingUtils.cpp */,
+				54D331D31D82D2C6007A696F /* UdpSocket.cpp */,
+			);
+			path = win32;
+			sourceTree = "<group>";
+		};
+		54D331D71D82D2C6007A696F /* osc */ = {
+			isa = PBXGroup;
+			children = (
+				54D331D81D82D2C6007A696F /* MessageMappingOscPacketListener.h */,
+				54D331D91D82D2C6007A696F /* OscException.h */,
+				54D331DA1D82D2C6007A696F /* OscHostEndianness.h */,
+				54D331DB1D82D2C6007A696F /* OscOutboundPacketStream.cpp */,
+				54D331DC1D82D2C6007A696F /* OscOutboundPacketStream.h */,
+				54D331DD1D82D2C6007A696F /* OscPacketListener.h */,
+				54D331DE1D82D2C6007A696F /* OscPrintReceivedElements.cpp */,
+				54D331DF1D82D2C6007A696F /* OscPrintReceivedElements.h */,
+				54D331E01D82D2C6007A696F /* OscReceivedElements.cpp */,
+				54D331E11D82D2C6007A696F /* OscReceivedElements.h */,
+				54D331E21D82D2C6007A696F /* OscTypes.cpp */,
+				54D331E31D82D2C6007A696F /* OscTypes.h */,
+			);
+			path = osc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5431CC1C1D8021EA004D3582 /* NeuronOSCBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5431CC241D8021EB004D3582 /* Build configuration list for PBXNativeTarget "NeuronOSCBridge" */;
+			buildPhases = (
+				5431CC191D8021EA004D3582 /* Sources */,
+				5431CC1A1D8021EA004D3582 /* Frameworks */,
+				5431CC1B1D8021EA004D3582 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeuronOSCBridge;
+			productName = NeuronOSCBridge;
+			productReference = 5431CC1D1D8021EB004D3582 /* NeuronOSCBridge */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5431CC151D8021EA004D3582 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Fede;
+				TargetAttributes = {
+					5431CC1C1D8021EA004D3582 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5431CC181D8021EA004D3582 /* Build configuration list for PBXProject "NeuronOSCBridge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5431CC141D8021EA004D3582;
+			productRefGroup = 5431CC1E1D8021EB004D3582 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5431CC1C1D8021EA004D3582 /* NeuronOSCBridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5431CC191D8021EA004D3582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D332001D82D3FA007A696F /* OscTypes.cpp in Sources */,
+				54D331FF1D82D3F5007A696F /* OscReceivedElements.cpp in Sources */,
+				54D331FE1D82D3F1007A696F /* OscOutboundPacketStream.cpp in Sources */,
+				54D331FD1D82D3E4007A696F /* UdpSocket.cpp in Sources */,
+				54D331FB1D82D3DA007A696F /* NetworkingUtils.cpp in Sources */,
+				54D331FA1D82D3BB007A696F /* IpEndpointName.cpp in Sources */,
+				5431CC211D8021EB004D3582 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5431CC221D8021EB004D3582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/oscpack_1_1_0/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5431CC231D8021EB004D3582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/oscpack_1_1_0/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5431CC251D8021EB004D3582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NeuronOSCBridge/dylib",
+					"$(PROJECT_DIR)/NeuronOSCBridge",
+					"$(PROJECT_DIR)/NeuronOSCBridge/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5431CC261D8021EB004D3582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NeuronOSCBridge/dylib",
+					"$(PROJECT_DIR)/NeuronOSCBridge",
+					"$(PROJECT_DIR)/NeuronOSCBridge/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5431CC181D8021EA004D3582 /* Build configuration list for PBXProject "NeuronOSCBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5431CC221D8021EB004D3582 /* Debug */,
+				5431CC231D8021EB004D3582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5431CC241D8021EB004D3582 /* Build configuration list for PBXNativeTarget "NeuronOSCBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5431CC251D8021EB004D3582 /* Debug */,
+				5431CC261D8021EB004D3582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5431CC151D8021EA004D3582 /* Project object */;
+}
