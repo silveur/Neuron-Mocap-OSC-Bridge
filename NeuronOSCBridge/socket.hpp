@@ -25,8 +25,7 @@ public:
     
   }
   
-  static void statusCallback(void* customedObj, SOCKET_REF sender,
-                                       SocketStatus status, char* message)
+  static void statusCallback(void* customedObj, SOCKET_REF sender, SocketStatus status, char* message)
   {
     std::cout << message << std::endl;
   }

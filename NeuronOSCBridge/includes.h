@@ -19,8 +19,15 @@ using namespace std;
 #include "include/DataType.h"
 #include "include/NeuronDataReader.h"
 
-char ipAddress[] = "10.211.55.3";
+//char ipAddress[] = "10.211.55.3";
+char ipAddress[] = "192.168.178.65";
 int port = 7001;
 
+struct SensorData
+{
+  std::string name;
+  int boneIndex;
+  float value;
+};
 
 #endif /* include_h */

@@ -12,7 +12,7 @@ int main()
   
   while(1)
   {
-    usleep(1000);
+    usleep(10000);
   }
   return 0;
 }

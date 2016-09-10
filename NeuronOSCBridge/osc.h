@@ -14,13 +14,10 @@
 #include "osc/OscOutboundPacketStream.h"
 #include "ip/UdpSocket.h"
 
-#define ADDRESS "192.168.178.56"
+#define ADDRESS "192.168.178.27"
 #define PORT 7000
 
 #define OUTPUT_BUFFER_SIZE 1024
-
-#define IP_MTU_SIZE 1536
-char buffer[IP_MTU_SIZE];
 
 class Osc
 {
@@ -28,20 +25,16 @@ public:
   Osc()
   {
     theTransmitSocket = new UdpTransmitSocket( IpEndpointName( ADDRESS, PORT ) );
+    BRStartUDPServiceAt(7001);
   }
   
   ~Osc()
   {
   }
   
-  void transmit(std::string messageName, float messageValue)
+  void transmit(osc::OutboundPacketStream packetToSend)
   {
-    osc::OutboundPacketStream p( buffer, IP_MTU_SIZE );
-    p.Clear();
-    p << osc::BeginMessage(messageName.c_str())
-    << true << 23 << messageValue << "hello" << osc::EndMessage;
-
-    theTransmitSocket->Send( p.Data(), p.Size() );
+    theTransmitSocket->Send( packetToSend.Data(), packetToSend.Size() );
   }
   
 private:
