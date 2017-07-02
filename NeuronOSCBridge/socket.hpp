@@ -14,10 +14,16 @@
 class Socket
 {
 public:
-  Socket(const char* ip, int port)
+  Socket(char* ip, int port)
   {
     BRRegisterSocketStatusCallback (this, statusCallback);
-    theSocketRef = BRConnectTo(ipAddress, port);    
+    
+    SOCKET_REF theUDP = BRStartUDPServiceAt(port);
+    
+    if(theUDP)
+    {
+      theSocketRef = BRConnectTo(ip, port);
+    }
   }
   
   ~Socket()

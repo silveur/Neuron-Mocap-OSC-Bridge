@@ -8,36 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		5431CC211D8021EB004D3582 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5431CC201D8021EB004D3582 /* main.cpp */; };
-		54D331BF1D82D1E1007A696F /* NeuronDataReader.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D331BE1D82D1E1007A696F /* NeuronDataReader.dylib */; };
+		54CDCE281D9281D900142BEE /* NeuronOSCBridge in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5431CC1D1D8021EB004D3582 /* NeuronOSCBridge */; };
 		54D331FA1D82D3BB007A696F /* IpEndpointName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D331C81D82D2C6007A696F /* IpEndpointName.cpp */; };
 		54D331FB1D82D3DA007A696F /* NetworkingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D331CD1D82D2C6007A696F /* NetworkingUtils.cpp */; };
 		54D331FD1D82D3E4007A696F /* UdpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D331CE1D82D2C6007A696F /* UdpSocket.cpp */; };
 		54D331FE1D82D3F1007A696F /* OscOutboundPacketStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D331DB1D82D2C6007A696F /* OscOutboundPacketStream.cpp */; };
 		54D331FF1D82D3F5007A696F /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D331E01D82D2C6007A696F /* OscReceivedElements.cpp */; };
 		54D332001D82D3FA007A696F /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D331E21D82D2C6007A696F /* OscTypes.cpp */; };
+		54D96C771D8473A000784D2F /* NeuronDataReader.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D96C761D8473A000784D2F /* NeuronDataReader.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5431CC1B1D8021EA004D3582 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = /Users/silvereletellier/Dropbox/SilvereFede;
 			dstSubfolderSpec = 0;
 			files = (
+				54CDCE281D9281D900142BEE /* NeuronOSCBridge in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5431CC1D1D8021EB004D3582 /* NeuronOSCBridge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NeuronOSCBridge; sourceTree = BUILT_PRODUCTS_DIR; };
 		5431CC201D8021EB004D3582 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		5431CC2A1D8029E0004D3582 /* DataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataType.h; sourceTree = "<group>"; };
-		5431CC2B1D8029E0004D3582 /* NeuronDataReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NeuronDataReader.h; sourceTree = "<group>"; };
 		5431CC311D80310F004D3582 /* socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = socket.hpp; sourceTree = "<group>"; };
 		5431CC331D803135004D3582 /* includes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = includes.h; sourceTree = "<group>"; };
 		5431CC361D803492004D3582 /* data.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = data.hpp; sourceTree = "<group>"; };
-		54D331BE1D82D1E1007A696F /* NeuronDataReader.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = NeuronDataReader.dylib; path = NeuronOSCBridge/include/NeuronDataReader.dylib; sourceTree = SOURCE_ROOT; };
 		54D331C81D82D2C6007A696F /* IpEndpointName.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IpEndpointName.cpp; sourceTree = "<group>"; };
 		54D331C91D82D2C6007A696F /* IpEndpointName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
 		54D331CA1D82D2C6007A696F /* NetworkingUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkingUtils.h; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		54D331E21D82D2C6007A696F /* OscTypes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OscTypes.cpp; sourceTree = "<group>"; };
 		54D331E31D82D2C6007A696F /* OscTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscTypes.h; sourceTree = "<group>"; };
 		54D332011D82D472007A696F /* osc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = osc.h; sourceTree = "<group>"; };
+		54D96C761D8473A000784D2F /* NeuronDataReader.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = NeuronDataReader.dylib; path = DerivedData/NeuronOSCBridge/Build/Products/Debug/NeuronDataReader.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54D331BF1D82D1E1007A696F /* NeuronDataReader.dylib in Frameworks */,
+				54D96C771D8473A000784D2F /* NeuronDataReader.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +78,7 @@
 		5431CC141D8021EA004D3582 = {
 			isa = PBXGroup;
 			children = (
+				54D96C761D8473A000784D2F /* NeuronDataReader.dylib */,
 				5431CC1F1D8021EB004D3582 /* NeuronOSCBridge */,
 				5431CC1E1D8021EB004D3582 /* Products */,
 			);
@@ -100,20 +101,8 @@
 				5431CC361D803492004D3582 /* data.hpp */,
 				54D332011D82D472007A696F /* osc.h */,
 				5431CC331D803135004D3582 /* includes.h */,
-				5431CC291D8029E0004D3582 /* include */,
 			);
 			path = NeuronOSCBridge;
-			sourceTree = "<group>";
-		};
-		5431CC291D8029E0004D3582 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				54D331BE1D82D1E1007A696F /* NeuronDataReader.dylib */,
-				5431CC2A1D8029E0004D3582 /* DataType.h */,
-				5431CC2B1D8029E0004D3582 /* NeuronDataReader.h */,
-			);
-			name = include;
-			path = "../../../Desktop/NeuronDataReader SDK b15/Mac/include";
 			sourceTree = "<group>";
 		};
 		54D331C01D82D2C6007A696F /* oscpack_1_1_0 */ = {
@@ -336,6 +325,7 @@
 					"$(PROJECT_DIR)/NeuronOSCBridge/dylib",
 					"$(PROJECT_DIR)/NeuronOSCBridge",
 					"$(PROJECT_DIR)/NeuronOSCBridge/include",
+					"$(PROJECT_DIR)/DerivedData/NeuronOSCBridge/Build/Products/Debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +339,7 @@
 					"$(PROJECT_DIR)/NeuronOSCBridge/dylib",
 					"$(PROJECT_DIR)/NeuronOSCBridge",
 					"$(PROJECT_DIR)/NeuronOSCBridge/include",
+					"$(PROJECT_DIR)/DerivedData/NeuronOSCBridge/Build/Products/Debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

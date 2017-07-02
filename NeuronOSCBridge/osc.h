@@ -14,22 +14,22 @@
 #include "osc/OscOutboundPacketStream.h"
 #include "ip/UdpSocket.h"
 
-#define ADDRESS "192.168.178.27"
-#define PORT 7000
-
-#define OUTPUT_BUFFER_SIZE 1024
+#define ADDRESS "127.0.0.1"
+#define PORT1 7000
+#define PORT2 7001
 
 class Osc
 {
 public:
   Osc()
   {
-    theTransmitSocket = new UdpTransmitSocket( IpEndpointName( ADDRESS, PORT ) );
-    BRStartUDPServiceAt(7001);
+    theTransmitSocket = new UdpTransmitSocket( IpEndpointName( ADDRESS, PORT1 ) );
+    theTransmitSocket2 = new UdpTransmitSocket( IpEndpointName( ADDRESS, PORT2 ) );
   }
   
   ~Osc()
   {
+    delete theTransmitSocket;
   }
   
   void transmit(osc::OutboundPacketStream packetToSend)
@@ -37,8 +37,14 @@ public:
     theTransmitSocket->Send( packetToSend.Data(), packetToSend.Size() );
   }
   
+  void transmit2(osc::OutboundPacketStream packetToSend)
+  {
+    theTransmitSocket2->Send( packetToSend.Data(), packetToSend.Size() );
+  }
+  
 private:
   UdpTransmitSocket* theTransmitSocket;
+  UdpTransmitSocket* theTransmitSocket2;
 };
 
 

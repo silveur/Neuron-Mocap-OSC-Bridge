@@ -9,14 +9,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NeuronOSCBridge/data.hpp"
-            timestampString = "495216359.556046"
+            filePath = "NeuronOSCBridge/osc.h"
+            timestampString = "511999196.251748"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "calcFrameCallback( void* customedObj, SOCKET_REF sender, CalcDataHeader* header, float* data )"
-            landmarkType = "5">
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "transmit(osc::OutboundPacketStream packetToSend)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -5,9 +5,23 @@
 Socket* theSocketConnexion;
 DataReceiver* theDataReceiver;
 
-int main()
+std::string destIp;
+int destPort;
+
+int main(int argc, char** argv)
 {
-  theSocketConnexion = new Socket(ipAddress, port);
+  if(argc < 2)
+  {
+    std::cout << "Missing IP or Port" << std::endl;
+    return -1;
+  }
+  else
+  {
+    destIp = std::string(argv[1]);
+    destPort = stoi(argv[2]);
+  }
+  
+  theSocketConnexion = new Socket((char*)destIp.c_str(), destPort);
   theDataReceiver = new DataReceiver();
   
   while(1)

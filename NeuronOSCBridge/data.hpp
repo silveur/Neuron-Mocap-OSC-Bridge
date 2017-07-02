@@ -10,8 +10,9 @@
 #define data_h
 
 
-#define IP_MTU_SIZE 1536
+#define IP_MTU_SIZE 2048*8
 char buffer[IP_MTU_SIZE];
+char Calcbuffer[IP_MTU_SIZE];
 
 #include "includes.h"
 #include "osc.h"
@@ -53,7 +54,32 @@ enum BVHData : int
   Rotation_Z
 };
 
+enum BVHCalcData : int
+{
+  Position_X = 0,
+  Position_Y,
+  Position_Z,
+  
+//  Velocity_X,
+//  Velocity_Y,
+//  Velocity_Z,
+  
+  Quaternion_W,
+  Quaternion_X,
+  Quaternion_Y,
+  Quaternion_Z
+  
+//  velocity_X,
+//  velocity_Y,
+//  velocity_Z,
+//  
+//  Gyro_X,
+//  Gyro_Y,
+//  Gyro_Z
+};
+
 const string BVHStrings[6] = { "/Dx", "/Dy", "/Dz", "/Ry", "/Rx", "/Rz" };
+const string BVHCaclcStrings[16] = { "/Px", "/Py", "/Pz", "/Qw", "/Qx", "/Qy", "/Qz", "/AVx", "/AVy", "/AVz", "/Gx", "/Gy", "/Gz" };
 
 class DataReceiver
 {
@@ -73,21 +99,32 @@ public:
     
     for(int i=0 ; i<numSensor; i++)
     {
-      for(int j=3; j<BVHData::Rotation_Z + 1; j++)
+      for(int j=0; j<BVHData::Rotation_Z + 1; j++)
       {
         std::string bvhName = theSensorData[i].name; bvhName.append(BVHStrings[j]);
         packet << osc::BeginMessage(bvhName.c_str()) << data[theSensorData[i].boneIndex * 6 + j] << osc::EndMessage;
       }
     }
-    
     packet << osc::EndBundle;
-    
     theOscSocket->transmit(packet);
   }
   
   static void calcFrameCallback( void* customedObj, SOCKET_REF sender, CalcDataHeader* header, float* data )
   {
-    std::cout << "Calculation DATA" << std::endl;
+    osc::OutboundPacketStream packet(Calcbuffer, IP_MTU_SIZE );
+    packet.Clear();
+    packet << osc::BeginBundle();
+//    std:cout << data[theSensorData[20].boneIndex * 16 + 6] << std::endl;
+    for(int i=0 ; i<numSensor; i++)
+    {
+      for(int j=0; j<BVHCalcData::Quaternion_Z + 1; j++)
+      {
+        std::string bvhName = theSensorData[i].name; bvhName.append(BVHCaclcStrings[j]);
+        packet << osc::BeginMessage(bvhName.c_str()) << data[theSensorData[i].boneIndex * 16 + j] << osc::EndMessage;
+      }
+    }
+    packet << osc::EndBundle;
+    theOscSocket->transmit2(packet);
   }
   
   ~DataReceiver()
